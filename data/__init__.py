@@ -7,6 +7,7 @@
 import os
 import torch
 import importlib
+import torchvision 
 
 
 def custom_get_dataloaders(opt):
