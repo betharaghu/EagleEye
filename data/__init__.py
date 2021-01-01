@@ -11,7 +11,7 @@ import importlib
 
 def custom_get_dataloaders(opt):
     dataset_filename = "data." + opt.dataset_name
-    datasetlib = importlib.import_module(dataset_filename)
+    datasetlib = torchvision.datasets.(dataset_filename)
     # find method named `get_dataloaders`
     for name, method in datasetlib.__dict__.items():
         if name.lower() == "get_dataloaders":
